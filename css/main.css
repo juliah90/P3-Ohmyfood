@@ -72,7 +72,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -307,5 +308,32 @@ template {
   display: none;
 }
 
+.body {
+  max-width: 768px;
+  padding: 0%;
+}
 
-/*# sourceMappingURL=main.css.map */
+.section1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ohmyfood {
+  padding-top: 20px;
+}
+.ohmyfood .logo {
+  width: 180px;
+  height: auto;
+}
+
+.heading_info {
+  display: flex;
+  align-items: center;
+}
+
+.section2 {
+  display: flex;
+  background-color: gray;
+}/*# sourceMappingURL=main.css.map */
