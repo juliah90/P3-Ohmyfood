@@ -311,6 +311,7 @@ template {
 .body {
   max-width: 400px;
   padding: 0%;
+  margin: auto;
 }
 
 .section1 {
@@ -342,7 +343,7 @@ template {
 
 .section2 {
   display: flex;
-  background-color: gray;
+  background-color: #efe9f5;
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
