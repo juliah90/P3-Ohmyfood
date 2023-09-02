@@ -346,6 +346,36 @@ template {
   background-color: #efe9f5;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20px;
+  padding: 0px 15px 20px 15px;
   font-family: "Roboto", sans-serif;
+}
+
+.sec2_heading {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.sec2_paragraph {
+  text-align: center;
+}
+
+.btn_sec2 .btn-grad {
+  background-image: radial-gradient(closest-side at 15% 26%, #af78f1 64%, #9356DC 147%);
+  margin: 10px;
+  padding: 15px 0px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 3px 4px 4px #c7bcbc;
+  border-radius: 50px;
+  width: 215px;
+  display: block;
+  border: none;
+  text-decoration: none;
+}
+.btn_sec2 .btn-grad:hover {
+  background-position: top bottom; /* change the direction of the change here */
+  color: #9356DC;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
