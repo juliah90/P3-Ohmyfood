@@ -309,7 +309,7 @@ template {
 }
 
 .body {
-  max-width: 768px;
+  max-width: 400px;
   padding: 0%;
 }
 
@@ -331,10 +331,20 @@ template {
 .heading_info {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 15px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  background-color: lightgray;
+  box-shadow: inset 0px 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 .section2 {
   display: flex;
-  align-items: center;
   background-color: gray;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  font-family: "Roboto", sans-serif;
 }/*# sourceMappingURL=main.css.map */
