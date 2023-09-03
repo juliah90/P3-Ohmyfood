@@ -312,6 +312,7 @@ template {
   max-width: 400px;
   padding: 0%;
   margin: auto;
+  font-family: "Roboto", sans-serif;
 }
 
 .section1 {
@@ -347,7 +348,6 @@ template {
   flex-direction: column;
   align-items: center;
   padding: 0px 15px 20px 15px;
-  font-family: "Roboto", sans-serif;
 }
 
 .sec2_heading {
@@ -372,10 +372,56 @@ template {
   width: 215px;
   display: block;
   border: none;
-  text-decoration: none;
 }
 .btn_sec2 .btn-grad:hover {
-  background-position: top bottom; /* change the direction of the change here */
+  background-position: top bottom;
+  /* change the direction of the change here */
   color: #9356DC;
   text-decoration: none;
+}
+
+.sec3_info-blocks {
+  margin: 15px;
+}
+.sec3_info-blocks .sec3_heading {
+  padding-left: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.sec3_block1 {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.blocks_numbers {
+  position: relative;
+  left: 28px;
+  border-radius: 50px;
+  background-color: #9356DC;
+  padding: 6px 1px 4px 8px;
+  width: 15px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+.blocks_choose {
+  display: flex;
+  align-items: center;
+}
+
+.cellphone {
+  position: relative;
+  left: 45px;
+  color: gray;
+}
+
+.choose_restaurant {
+  padding: 25px 65px 25px 65px;
+  border-radius: 20px;
+  background-color: #efe9f5;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  box-shadow: 3px 4px 7px #ddd2d2;
 }/*# sourceMappingURL=main.css.map */
