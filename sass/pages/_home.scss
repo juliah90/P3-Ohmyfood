@@ -51,13 +51,13 @@
   text-align: center;
 }
 
-.btn_sec2 {
-  .btn-grad {
+.btn-sec2 {
+  &--grad {
     background-image: radial-gradient(closest-side at 15% 26%, #af78f1 64%, #9356DC 147%);
     margin: 10px;
     padding: 15px 0px;
     text-align: center;
-    transition: 0.5s;
+    // transition: 0.5s;
     background-size: 200% auto;
     color: white;
     box-shadow: 3px 4px 4px #c7bcbc;
@@ -67,11 +67,11 @@
     border: none;
   }
 
-  .btn-grad:hover {
-    background-position: top bottom;
-    /* change the direction of the change here */
-    color: #9356DC;
+  &--grad:hover {
+    cursor: pointer;
+    background-image:radial-gradient(closest-side at 15% 26%, #c480bb 64%, #9356DC 147%);
     text-decoration: none;
+    font-weight: 700;
   }
 }
 
@@ -84,7 +84,7 @@
   }
 }
 
-.sec3_block1 {
+.sec3_blocks {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -114,11 +114,22 @@
   color: gray;
 }
 
-.choose_restaurant {
-  padding: 25px 65px 25px 65px;
+.blocks-statement {
   border-radius: 20px;
   background-color: #efe9f5;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   box-shadow: 3px 4px 7px #ddd2d2;
+
+  &--choose {
+    padding: 25px 89px 25px 65px;
+  }
+
+  &--create {
+    padding: 25px 102px 25px 65px;
+  }
+
+  &--enjoy {
+    padding: 25px 35px 25px 65px;
+  }
 }
