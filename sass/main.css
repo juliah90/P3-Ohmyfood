@@ -446,10 +446,12 @@ body {
   padding: 5px 20px 5px 20px;
   width: -moz-fit-content;
   width: fit-content;
-  color: 9900D0;
+  color: #99E2D0;
 }
 .section4 .sec4_heading {
-  padding: 35px 0px 0px 15px;
+  font-weight: 900;
+  font-size: 20px;
+  padding: 45px 0px 0px 15px;
 }
 
 .cards-all {
@@ -469,6 +471,45 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   width: 320px;
+  height: 165px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+
+.block-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 65px;
+}
+
+.card-title {
+  font-weight: 900;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+.card-location {
+  font-weight: 300;
+  margin: 0;
+}
+
+.heart-images {
+  font-size: 25px;
+}
+.heart-images .heart-solid {
+  display: none;
+}
+.heart-images .heart-outline {
+  color: #9356dc;
+}
+.heart-images:hover .heart-solid {
+  cursor: pointer;
+  color: #9356dc;
+  display: block;
+}
+.heart-images:hover .heart-outline {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
