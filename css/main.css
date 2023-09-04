@@ -307,11 +307,15 @@ template {
   display: none;
 }
 
-.body {
-  max-width: 400px;
+body {
+  max-width: 365px;
   padding: 0%;
-  margin: auto;
+  margin: 0;
   font-family: "Roboto", sans-serif;
+}
+
+.text-link {
+  text-decoration: none;
 }
 
 .section1 {
@@ -336,7 +340,6 @@ template {
   width: 100%;
   gap: 15px;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
   background-color: lightgray;
   box-shadow: inset 0px 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
@@ -346,16 +349,18 @@ template {
   background-color: #efe9f5;
   flex-direction: column;
   align-items: center;
-  padding: 0px 15px 20px 15px;
+  padding: 15px 15px 40px 15px;
 }
 
 .sec2_heading {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .sec2_paragraph {
   text-align: center;
+  width: 300px;
+  font-weight: 300;
 }
 
 .btn-sec2--grad {
@@ -379,11 +384,10 @@ template {
 }
 
 .sec3_info-blocks {
-  margin: 15px;
+  margin: 45px 0px;
 }
 .sec3_info-blocks .sec3_heading {
   padding-left: 15px;
-  font-family: "Roboto", sans-serif;
 }
 
 .sec3_blocks {
@@ -412,7 +416,7 @@ template {
 .cellphone {
   position: relative;
   left: 45px;
-  color: gray;
+  color: #9356DC;
 }
 
 .blocks-statement {
