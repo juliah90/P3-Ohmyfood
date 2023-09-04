@@ -140,6 +140,7 @@ body {
 
 .section4 {
   background-color: #efe9f5;
+  padding-bottom: 60px;
 
   .new-tag {
     display: none;
@@ -161,6 +162,7 @@ body {
   flex-direction: column;
   padding: 0px 5px 0px 5px;
   align-items: center;
+  gap: 20px;
 }
 
 .card-block {
