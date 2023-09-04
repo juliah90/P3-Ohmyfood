@@ -5,7 +5,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.text-link{
+.text-link {
   text-decoration: none;
 }
 
@@ -74,7 +74,7 @@ body {
 
   &--grad:hover {
     cursor: pointer;
-    background-image:radial-gradient(closest-side at 15% 26%, #af78f1 64%, #9356DC 147%);
+    background-image: radial-gradient(closest-side at 15% 26%, #af78f1 64%, #9356DC 147%);
     text-decoration: none;
     font-weight: 700;
   }
@@ -115,7 +115,7 @@ body {
 .cellphone {
   position: relative;
   left: 45px;
-  color: #9356DC ;
+  color: #9356DC;
 }
 
 .blocks-statement {
@@ -135,5 +135,42 @@ body {
 
   &--enjoy {
     padding: 25px 35px 25px 65px;
+  }
+}
+
+.section4 {
+  background-color: #efe9f5;
+
+  .new-tag {
+    display: none;
+    background-color: #9356DC;
+    padding: 5px 20px 5px 20px;
+    width: fit-content;
+    color: 99E2D0
+  }
+
+  .sec4_heading {
+    padding: 35px 0px 0px 15px;
+  }
+}
+
+.cards-all {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 5px 0px 5px;
+  align-items: center;
+}
+
+.card-block {
+  background-color: #ffffff;
+  max-width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  .card-img {
+    object-fit: cover;
+    width: 320px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 }
