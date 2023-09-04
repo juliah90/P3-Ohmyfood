@@ -513,4 +513,27 @@ body {
   display: none;
 }
 
+footer {
+  background-color: #3b3b3b;
+  padding: 5px 10px 20px 10px;
+}
+footer .foot-all {
+  font-family: "Shrikhand", sans-serif;
+  padding-left: 0;
+  color: white;
+  font-size: 15px;
+}
+footer .foot-list {
+  font-weight: 300;
+  font-size: 13px;
+  list-style-type: none;
+  color: white;
+  margin: 6px 0px 0px 0px;
+}
+footer .foot-list .foot-image {
+  font-size: 10px;
+  width: 10px;
+  padding-right: 10px;
+}
+
 /*# sourceMappingURL=main.css.map */
