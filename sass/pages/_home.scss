@@ -3,10 +3,6 @@ body {
   padding: 0%;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-
-  .text-link {
-    text-decoration: none;
-  }
 }
 
 .section1 {
@@ -62,7 +58,6 @@ body {
     margin: 10px;
     padding: 15px 0px;
     text-align: center;
-    // transition: 0.5s;
     background-size: 200% auto;
     color: white;
     box-shadow: 3px 4px 4px #c7bcbc;
@@ -216,7 +211,7 @@ body {
     .heart-solid {
       cursor: pointer;
       color: #9356dc;
-      display: block
+      display: block;
     }
 
     .heart-outline {
@@ -229,14 +224,26 @@ footer {
   background-color: #3b3b3b;
   padding: 5px 10px 20px 10px;
 
-  .foot-all {
+  .text-link {
+    color: white;
+    text-decoration: none;
+  }
+
+  .foot-title {
     font-family: "Shrikhand", sans-serif;
     padding-left: 0;
     color: white;
     font-size: 15px;
   }
 
+  .foot-all {
+    text-decoration: none;
+    color: white;
+    padding-left: 0;
+  }
+
   .foot-list {
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     font-weight: 300;
     font-size: 13px;

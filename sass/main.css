@@ -314,9 +314,6 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
-body .text-link {
-  text-decoration: none;
-}
 
 .section1 {
   display: flex;
@@ -519,13 +516,23 @@ footer {
   background-color: #3b3b3b;
   padding: 5px 10px 20px 10px;
 }
-footer .foot-all {
+footer .text-link {
+  color: white;
+  text-decoration: none;
+}
+footer .foot-title {
   font-family: "Shrikhand", sans-serif;
   padding-left: 0;
   color: white;
   font-size: 15px;
 }
+footer .foot-all {
+  text-decoration: none;
+  color: white;
+  padding-left: 0;
+}
 footer .foot-list {
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   font-weight: 300;
   font-size: 13px;
