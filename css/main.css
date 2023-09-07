@@ -349,18 +349,21 @@ body {
 }
 
 .sec2_heading {
-  font-weight: 700;
-  font-size: 25px;
+  font-weight: 800;
+  font-size: 23px;
+  padding-bottom: 10px;
 }
 
 .sec2_paragraph {
   text-align: center;
   width: 300px;
   font-weight: 300;
+  font-size: 18px;
+  padding-bottom: 5px;
 }
 
 .btn-sec2--grad {
-  background-image: radial-gradient(closest-side at 15% 26%, rgba(172, 63, 173, 0.6901960784) 64%, #9356dc 147%);
+  background-image: radial-gradient(closest-side at 13% 26%, rgba(172, 63, 173, 0.6901960784) 249%, #9356dc 320%);
   margin: 10px;
   padding: 15px 0px;
   text-align: center;
@@ -410,9 +413,13 @@ body {
 }
 
 .cellphone {
+  font-size: 18px;
   position: relative;
   left: 45px;
   color: #9356dc;
+}
+.cellphone--other {
+  color: #7f7f7f;
 }
 
 .blocks-statement {
@@ -438,8 +445,8 @@ body {
 }
 .section4 .sec4_heading {
   font-weight: 900;
-  font-size: 20px;
-  padding: 45px 0px 0px 15px;
+  font-size: 23px;
+  padding: 55px 0px 0px 15px;
 }
 
 .cards-all {
@@ -461,6 +468,10 @@ body {
   position: relative;
   left: 230px;
   bottom: 150px;
+}
+.cards-all .new-tag--inactive {
+  background-color: transparent;
+  color: transparent;
 }
 .cards-all .text-link {
   text-decoration: none;
@@ -526,7 +537,7 @@ body {
 }
 .heart-images .heart-outline {
   position: absolute;
-  color: lightgrey;
+  color: #939292;
 }
 .heart-images .heart-outline:hover {
   transform: scale(0);
@@ -555,7 +566,7 @@ footer .foot-list {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 14px;
   list-style-type: none;
   color: white;
   margin: 6px 0px 0px 0px;

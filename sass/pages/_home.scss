@@ -42,19 +42,22 @@ body {
 }
 
 .sec2_heading {
-  font-weight: 700;
-  font-size: 25px;
+  font-weight: 800;
+  font-size: 23px;
+  padding-bottom: 10px;
 }
 
 .sec2_paragraph {
   text-align: center;
   width: 300px;
   font-weight: 300;
+  font-size: 18px;
+  padding-bottom: 5px;
 }
 
 .btn-sec2 {
   &--grad {
-    background-image: radial-gradient(closest-side at 15% 26%, #ac3fadb0 64%, $color-primary 147%);
+    background-image: radial-gradient(closest-side at 13% 26%, rgba(172, 63, 173, 0.6901960784) 249%, #9356dc 320%);
     margin: 10px;
     padding: 15px 0px;
     text-align: center;
@@ -108,9 +111,14 @@ body {
 }
 
 .cellphone {
+  font-size: 18px;
   position: relative;
   left: 45px;
   color: $color-primary;
+
+  &--other {
+    color: #7f7f7f
+  }
 }
 
 .blocks-statement {
@@ -139,8 +147,8 @@ body {
 
   .sec4_heading {
     font-weight: 900;
-    font-size: 20px;
-    padding: 45px 0px 0px 15px;
+    font-size: 23px;
+    padding: 55px 0px 0px 15px;
   }
 }
 
@@ -163,6 +171,11 @@ body {
     position: relative;
     left: 230px;
     bottom: 150px;
+
+    &--inactive {
+      background-color: transparent;
+      color: transparent;
+    }
   }
 
   .text-link {
@@ -235,7 +248,7 @@ body {
 
   .heart-outline {
     position: absolute;
-    color: lightgrey;
+    color: #939292;
 
     &:hover {
       transform: scale(0)
@@ -269,7 +282,7 @@ footer {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 14px;
     list-style-type: none;
     color: white;
     margin: 6px 0px 0px 0px;
