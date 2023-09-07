@@ -1,5 +1,5 @@
 body {
-  max-width: 365px;
+  max-width: 375px;
   padding: 0%;
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -54,7 +54,7 @@ body {
 
 .btn-sec2 {
   &--grad {
-    background-image: radial-gradient(closest-side at 15% 26%, #ac3fadb0 64%, #9356DC 147%);
+    background-image: radial-gradient(closest-side at 15% 26%, #ac3fadb0 64%, $color-primary 147%);
     margin: 10px;
     padding: 15px 0px;
     text-align: center;
@@ -69,7 +69,7 @@ body {
 
   &--grad:hover {
     cursor: pointer;
-    background-image: radial-gradient(closest-side at 15% 26%, #af78f1 64%, #9356DC 147%);
+    background-image: radial-gradient(closest-side at 15% 26%, #af78f1 64%, $color-primary 147%);
     text-decoration: none;
     font-weight: 700;
   }
@@ -93,7 +93,7 @@ body {
   position: relative;
   left: 28px;
   border-radius: 50px;
-  background-color: #9356DC;
+  background-color: $color-primary;
   padding: 6px 1px 4px 8px;
   width: 15px;
   color: white;
@@ -110,7 +110,7 @@ body {
 .cellphone {
   position: relative;
   left: 45px;
-  color: #9356DC;
+  color: $color-primary;
 }
 
 .blocks-statement {
@@ -138,8 +138,8 @@ body {
   padding-bottom: 60px;
 
   .new-tag {
-    display: none;
-    background-color: #9356DC;
+    display: block;
+    background-color: $color-primary;
     padding: 5px 20px 5px 20px;
     width: fit-content;
     color: #99E2D0
@@ -197,25 +197,35 @@ body {
 }
 
 .heart-images {
+  position: relative;
   font-size: 25px;
+  right: 30px;
+  bottom: 15px;
 
   .heart-solid {
-    display: none;
+    position: absolute;
+    // display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(#9356DC 20%, #FF79DA 80%);
+      display: initial;
+      opacity: 1;
+    }
   }
 
   .heart-outline {
-    color: #9356dc;
-  }
+    position: absolute;
+    color: lightgrey;
 
-  &:hover {
-    .heart-solid {
-      cursor: pointer;
-      color: #9356dc;
-      display: block;
-    }
-
-    .heart-outline {
-      display: none
+    &:hover {
+      transform: scale(0)
     }
   }
 }
@@ -259,3 +269,5 @@ footer {
     }
   }
 }
+
+@media (min-width: 992px) {}
