@@ -436,13 +436,6 @@ body {
   background-color: #efe9f5;
   padding-bottom: 60px;
 }
-.section4 .new-tag {
-  display: block;
-  background-color: #9356dc;
-  padding: 5px 20px 5px 20px;
-  width: fit-content;
-  color: #99E2D0;
-}
 .section4 .sec4_heading {
   font-weight: 900;
   font-size: 20px;
@@ -456,10 +449,27 @@ body {
   align-items: center;
   gap: 20px;
 }
+.cards-all .new-tag {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  display: block;
+  font-size: 14px;
+  background-color: #99E2D0;
+  padding: 5px 25px 5px 25px;
+  width: fit-content;
+  color: #38916d;
+  position: relative;
+  left: 230px;
+  bottom: 150px;
+}
+.cards-all .text-link {
+  text-decoration: none;
+}
 
 .card-block {
   background-color: #ffffff;
   max-width: 320px;
+  height: 235px;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -472,6 +482,8 @@ body {
 }
 
 .block-info {
+  position: relative;
+  bottom: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
