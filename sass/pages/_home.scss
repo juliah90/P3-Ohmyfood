@@ -16,7 +16,8 @@ body {
   padding-top: 20px;
 
   .logo {
-    width: 180px;
+    width: 160px;
+    padding-bottom: 10px;
     height: auto;
   }
 }
@@ -28,14 +29,14 @@ body {
   width: 100%;
   gap: 15px;
   font-weight: 500;
-  background-color: lightgray;
-  box-shadow: inset 0px 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #eaeaea;
+  box-shadow: inset 0px 6px 4px -4px rgb(139 138 138 / 50%);
 }
 
 
 .section2 {
   display: flex;
-  background-color: #efe9f5;
+  background-color: #f6f6f6;
   flex-direction: column;
   align-items: center;
   padding: 15px 15px 40px 15px;
@@ -57,7 +58,7 @@ body {
 
 .btn-sec2 {
   &--grad {
-    background-image: radial-gradient(closest-side at 13% 26%, rgba(172, 63, 173, 0.6901960784) 249%, #9356dc 320%);
+    background-image: radial-gradient(closest-side at 17% 26%, #ef74da 82%, #9356dc 291%);
     margin: 10px;
     padding: 15px 0px;
     text-align: center;
@@ -72,9 +73,10 @@ body {
 
   &--grad:hover {
     cursor: pointer;
-    background-image: radial-gradient(closest-side at 15% 26%, #af78f1 64%, $color-primary 147%);
+    background-image: lighten(#9356dc, 25%);
     text-decoration: none;
     font-weight: 700;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -117,13 +119,13 @@ body {
   color: $color-primary;
 
   &--other {
-    color: #7f7f7f
+    color: #7e7e7e
   }
 }
 
 .blocks-statement {
   border-radius: 20px;
-  background-color: #efe9f5;
+  background-color: #f6f6f6;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   box-shadow: 3px 4px 7px #ddd2d2;
@@ -142,7 +144,7 @@ body {
 }
 
 .section4 {
-  background-color: #efe9f5;
+  background-color: #f6f6f6;
   padding-bottom: 60px;
 
   .sec4_heading {
@@ -190,6 +192,10 @@ body {
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
+  }
+
 
   .card-img {
     object-fit: cover;
@@ -197,6 +203,18 @@ body {
     height: 165px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+
+    &--bottom {
+      object-position: bottom;
+    }
+
+    &--percent {
+      object-position: 50% 93%;
+    }
+
+    &--alone {
+      object-position: 50% 60%;
+    }
   }
 }
 
@@ -209,6 +227,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   height: 65px;
+  color: black;
 }
 
 .card-title {
