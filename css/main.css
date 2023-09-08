@@ -593,4 +593,56 @@ footer .foot-list .foot-image {
   padding-right: 10px;
 }
 
+@media (min-width: 992px) {
+  body {
+    max-width: inherit;
+  }
+  .sec2_paragraph {
+    width: auto;
+  }
+  .sec3_info-blocks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .section4 .sec4_heading {
+    padding: 55px 0px 10px 60px;
+  }
+  .cards-all {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px 190px;
+  }
+  .cards-all .card-block {
+    height: 270px;
+    max-width: 350px;
+  }
+  .cards-all .card-img {
+    width: 350px;
+    height: 200px;
+  }
+  .cards-all .new-tag {
+    left: 250px;
+    bottom: 185px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+  footer .foot-title {
+    padding: 7px 50px 0px 0px;
+  }
+  footer .foot-all {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
