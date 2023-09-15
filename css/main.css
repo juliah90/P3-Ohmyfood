@@ -320,6 +320,8 @@ body {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: disappear 3s cubic-bezier(0.65, 0.1, 0, 1.2);
 }
 
 .spinner {
@@ -327,6 +329,9 @@ body {
   width: 100px;
   height: 100px;
   animation: spinner-animate 2s linear;
+  position: sticky;
+  left: 50vw;
+  top: 50vh;
 }
 
 @keyframes spinner-animate {
@@ -335,6 +340,14 @@ body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 .section1 {
@@ -621,6 +634,9 @@ footer .foot-list .foot-image {
 @media (min-width: 600px) {
   body {
     max-width: inherit;
+  }
+  .sec2-3 {
+    display: flex;
   }
   .section2 {
     position: absolute;
