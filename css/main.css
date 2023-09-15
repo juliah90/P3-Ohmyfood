@@ -323,11 +323,11 @@ body {
 
 .spinner-cover {
   position: fixed;
-  scale: 0;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
   animation: disappear 3s cubic-bezier(0.65, 0.1, 0, 1.2);
+  animation-fill-mode: forwards;
 }
 
 .spinner {
