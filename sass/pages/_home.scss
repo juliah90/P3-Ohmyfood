@@ -7,11 +7,10 @@ body {
 
 .spinner-cover {
   position: fixed;
-  z-index: 1000;
+  scale: 0;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
-  opacity: 0;
   animation: disappear 3s cubic-bezier(0.65, 0.1, 0, 1.2);
 }
 
@@ -38,6 +37,7 @@ body {
 @keyframes disappear {
   from {
     opacity: 1;
+    z-index: 1000;
   }
 
   to {
@@ -172,11 +172,11 @@ body {
   box-shadow: 3px 4px 7px #ddd2d2;
 
   &--choose {
-    padding: 25px 89px 25px 65px;
+    padding: 25px 89px 25px 68px;
   }
 
   &--create {
-    padding: 25px 102px 25px 65px;
+    padding: 25px 102px 25px 67px;
   }
 
   &--enjoy {
@@ -365,22 +365,23 @@ footer {
 
   .sec2-3 {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .section2 {
-    position: absolute;
     gap: 33px;
     margin-left: 25px;
     border-radius: 30px;
   }
 
   .sec3_info-blocks {
-    position: relative;
-    left: 410px;
+    // position: relative;
+    // left: 410px;
   }
 
   .sec3_heading {
-    padding-left: 96px;
+    text-align: center;
   }
 
   .cards-all {
