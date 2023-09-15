@@ -331,7 +331,7 @@ body {
 }
 
 .spinner {
-  background-color: blue;
+  background-color: #99E2D0;
   width: 100px;
   height: 100px;
   animation: spinner-animate 2s linear;

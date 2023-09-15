@@ -16,7 +16,7 @@ body {
 }
 
 .spinner {
-  background-color: blue;
+  background-color: $color-tertiary;
   width: 100px;
   height: 100px;
   animation: spinner-animate 2s linear;
