@@ -46,7 +46,7 @@ body {
 
     .heart-outline {
       font-size: 25px;
-      transform: scale(0.85, 1);
+      transform: scale(0.9, 1);
     }
   }
 
@@ -57,13 +57,15 @@ body {
   }
 }
 
-.entrees_heading-block {
+.main_heading-block {
   display: flex;
-  .entrees-heading {
+
+  .main-heading {
     font-size: 17px;
     font-weight: 300;
   }
-  .entrees-block{
+
+  .main-block {
     color: $color-tertiary;
     width: 10px;
     height: 5px;

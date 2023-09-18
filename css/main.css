@@ -354,7 +354,7 @@ body {
 }
 .restaurant_menu-one .heading_heart .heart-outline {
   font-size: 25px;
-  transform: scale(0.85, 1);
+  transform: scale(0.9, 1);
 }
 .restaurant_menu-one .heading_menu-one {
   font-family: "Shrikhand", sans-sarif;
@@ -362,14 +362,14 @@ body {
   font-size: 28px;
 }
 
-.entrees_heading-block {
+.main_heading-block {
   display: flex;
 }
-.entrees_heading-block .entrees-heading {
+.main_heading-block .main-heading {
   font-size: 17px;
   font-weight: 300;
 }
-.entrees_heading-block .entrees-block {
+.main_heading-block .main-block {
   color: #99E2D0;
   width: 10px;
   height: 5px;
