@@ -327,10 +327,52 @@ body {
   justify-content: space-between;
 }
 
-.hero_image-one {
+.hero_image {
+  position: absolute;
+  max-width: 375px;
+}
+.hero_image .hero_image-one {
   object-fit: cover;
   width: 100%;
   height: 280px;
+}
+
+.restaurant_menu-one {
+  position: relative;
+  top: 222px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 20px 20px 0px 20px;
+}
+.restaurant_menu-one .heading_heart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.restaurant_menu-one .heading_heart .heart-outline {
+  font-size: 25px;
+  transform: scale(0.85, 1);
+}
+.restaurant_menu-one .heading_menu-one {
+  font-family: "Shrikhand", sans-sarif;
+  font-weight: lighter;
+  font-size: 28px;
+}
+
+.entrees_heading-block {
+  display: flex;
+}
+.entrees_heading-block .entrees-heading {
+  font-size: 17px;
+  font-weight: 300;
+}
+.entrees_heading-block .entrees-block {
+  color: #99E2D0;
+  width: 10px;
+  height: 5px;
 }
 
 body {

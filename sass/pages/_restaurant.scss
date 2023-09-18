@@ -1,25 +1,71 @@
 body {
-    max-width: 375px;
-    padding: 0%;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-  }
+  max-width: 375px;
+  padding: 0%;
+  margin: 0;
+  font-family: $font-primary;
+}
 
-  .nav_arrow{
-    font-size: 20px;
-  }
+.nav_arrow {
+  font-size: 20px;
+}
 
-  .head_nav-logo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 111px;
-    justify-content: space-between;
-  }
+.head_nav-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 111px;
+  justify-content: space-between;
+}
 
-  .hero_image-one{
+.hero_image {
+  position: absolute;
+  max-width: 375px;
+
+  .hero_image-one {
     object-fit: cover;
     width: 100%;
     height: 280px;
   }
+}
+
+.restaurant_menu-one {
+  position: relative;
+  top: 222px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 20px 20px 0px 20px;
+
+  .heading_heart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+
+    .heart-outline {
+      font-size: 25px;
+      transform: scale(0.85, 1);
+    }
+  }
+
+  .heading_menu-one {
+    font-family: $font-secondary;
+    font-weight: lighter;
+    font-size: 28px;
+  }
+}
+
+.entrees_heading-block {
+  display: flex;
+  .entrees-heading {
+    font-size: 17px;
+    font-weight: 300;
+  }
+  .entrees-block{
+    color: $color-tertiary;
+    width: 10px;
+    height: 5px;
+  }
+}
