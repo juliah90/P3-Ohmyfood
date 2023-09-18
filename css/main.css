@@ -314,6 +314,25 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.nav_arrow {
+  font-size: 20px;
+}
+
+.head_nav-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 111px;
+  justify-content: space-between;
+}
+
+.hero_image-one {
+  object-fit: cover;
+  width: 100%;
+  height: 280px;
+}
+
 body {
   max-width: 375px;
   padding: 0%;
