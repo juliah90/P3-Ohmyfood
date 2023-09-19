@@ -314,10 +314,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-main {
-  max-width: 375px;
-}
-
 .nav_arrow {
   font-size: 20px;
 }
@@ -395,14 +391,14 @@ main {
   justify-content: space-between;
   box-shadow: 0px 4px 12px #dfdede;
 }
+.menu_blocks-all .menu_blocks:hover .blocks_check {
+  transform: scaleX(1);
+}
 .menu_blocks-all .menu_blocks:hover .blocks_price {
-  transition: transform 2s ease-in-out;
   transform: translate(-15px, 0px);
 }
 .menu_blocks-all .menu_blocks:hover .check-mark {
-  transition: transform 2s ease-in-out;
-  transform: scale(1), rotate(360deg);
-  transform: rotate(360deg);
+  transform: rotateZ(270deg) scaleX(1);
 }
 .menu_blocks-all .blocks_heading {
   font-weight: 700;
@@ -417,6 +413,10 @@ main {
   transform-origin: left;
 }
 
+.menu_blocks_heading-info {
+  transform: scaleX(0.5);
+}
+
 .menu_blocks_price-check {
   display: flex;
   flex-direction: row;
@@ -426,9 +426,19 @@ main {
   font-size: 15px;
   font-weight: 700;
   margin: 0;
+  transition: transform 300ms ease-in-out;
+}
+.menu_blocks_price-check .blocks_check {
+  background-color: green;
+  width: 60px;
+  height: 100%;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
 }
 .menu_blocks_price-check .check-mark {
-  transform: scale(0.2);
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  transform: rotate(0deg);
 }
 
 body {
@@ -779,6 +789,22 @@ footer .foot-list .foot-image {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+  footer .foot-title {
+    padding: 7px 50px 0px 0px;
+  }
+  footer .foot-all {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
 }
 @media (min-width: 992px) {
   body {
@@ -808,22 +834,6 @@ footer .foot-list .foot-image {
   .cards-all .new-tag {
     left: 250px;
     bottom: 185px;
-  }
-  footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-  }
-  footer .foot-title {
-    padding: 7px 50px 0px 0px;
-  }
-  footer .foot-all {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 50px;
   }
 }
 

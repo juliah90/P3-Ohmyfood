@@ -393,7 +393,27 @@ footer {
     justify-content: space-evenly;
   }
 
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+
+    .foot-title {
+      padding: 7px 50px 0px 0px;
+    }
+
+    .foot-all {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 50px;
+    }
+  }
+
 }
+
 
 @media (min-width: 992px) {
   body {
@@ -410,6 +430,7 @@ footer {
       padding: 55px 0px 10px 60px;
     }
   }
+
 
   .cards-all {
     display: flex;
@@ -431,25 +452,6 @@ footer {
     .new-tag {
       left: 250px;
       bottom: 185px;
-    }
-  }
-
-  footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-
-    .foot-title {
-      padding: 7px 50px 0px 0px;
-    }
-
-    .foot-all {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 50px;
     }
   }
 }

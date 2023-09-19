@@ -5,9 +5,9 @@ body {
   font-family: $font-primary;
 }
 
-main {
-  max-width: 375px;
-}
+// main {
+//   max-width: 375px;
+// }
 
 .nav_arrow {
   font-size: 20px;
@@ -93,16 +93,17 @@ main {
     box-shadow: 0px 4px 12px #dfdede;
 
     &:hover {
+      .blocks_check {
+        transform: scaleX(1);
+      }
+
       .blocks_price {
-        transition: transform 2s ease-in-out;
         transform: translate(-15px, 0px);
       }
 
       .check-mark {
-        transition: transform 2s ease-in-out;
-        transform: scale(1), rotate(360deg);
-        transform: rotate(360deg);
-
+        // transform-origin: right;
+        transform: rotateZ(270deg) scaleX(1);
       }
     }
   }
@@ -122,6 +123,10 @@ main {
   }
 }
 
+.menu_blocks_heading-info {
+  transform: scaleX(0.5);
+}
+
 .menu_blocks_price-check {
   display: flex;
   flex-direction: row;
@@ -131,9 +136,20 @@ main {
     font-size: 15px;
     font-weight: 700;
     margin: 0;
+    transition: transform 300ms ease-in-out;
+  }
+
+  .blocks_check {
+    background-color: green;
+    width: 60px;
+    height: 100%;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
   }
 
   .check-mark {
-    transform: scale(.2);
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform: rotate(0deg);
   }
 }
