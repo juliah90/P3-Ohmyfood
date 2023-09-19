@@ -5,17 +5,22 @@ body {
   font-family: $font-primary;
 }
 
+main {
+  max-width: 375px;
+}
+
 .nav_arrow {
   font-size: 20px;
 }
 
 .head_nav-logo {
+  max-width: 375px;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-left: 20px;
-  padding-right: 111px;
-  justify-content: space-between;
+  gap: 70px;
+  justify-content: flex-start;
 }
 
 .hero_image {
@@ -59,6 +64,7 @@ body {
 
 .main_heading-block {
   display: flex;
+  flex-direction: column;
 
   .main-heading {
     font-size: 17px;
@@ -69,5 +75,35 @@ body {
     color: $color-tertiary;
     width: 10px;
     height: 5px;
+  }
+}
+
+.menu_blocks-all {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+
+  .menu_blocks {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    padding: 0px 5px 0px 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 4px 12px #dfdede;
+  }
+
+  .blocks_heading {
+    font-weight: 700;
+    margin: 12px 0px 7px 6px;
+    font-size: 18px;
+  }
+
+  .blocks_info {
+    margin: 0px 0px 0px 6px;
+    font-size: 15px;
+    font-weight: 300;
+    transform: scale(.99,1);
+    transform-origin: left;
   }
 }
