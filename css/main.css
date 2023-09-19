@@ -412,29 +412,25 @@ body {
   transform-origin: left;
 }
 
-.menu_blocks_heading-info {
-  transform: scaleX(0.5);
-}
-
-.menu_blocks_price-check {
+.menu_blocks_heading-info .menu_blocks_price-check {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
 }
-.menu_blocks_price-check .blocks_price {
+.menu_blocks_heading-info .menu_blocks_price-check .blocks_price {
   font-size: 15px;
   font-weight: 700;
   margin: 0;
   transition: transform 300ms ease-in-out;
 }
-.menu_blocks_price-check .blocks_check {
+.menu_blocks_heading-info .menu_blocks_price-check .blocks_check {
   background-color: green;
   width: 60px;
   height: 100%;
   transform: scaleX(0);
   transition: transform 300ms ease-in-out;
 }
-.menu_blocks_price-check .check-mark {
+.menu_blocks_heading-info .menu_blocks_price-check .check-mark {
   transition: transform 300ms ease-in-out;
   transform: scaleX(0);
   transform: rotate(0deg);

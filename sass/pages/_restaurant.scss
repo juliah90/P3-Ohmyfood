@@ -5,10 +5,6 @@ body {
   font-family: $font-primary;
 }
 
-// main {
-//   max-width: 375px;
-// }
-
 .nav_arrow {
   font-size: 20px;
 }
@@ -124,32 +120,32 @@ body {
 }
 
 .menu_blocks_heading-info {
-  transform: scaleX(0.5);
-}
 
-.menu_blocks_price-check {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
 
-  .blocks_price {
-    font-size: 15px;
-    font-weight: 700;
-    margin: 0;
-    transition: transform 300ms ease-in-out;
-  }
+  .menu_blocks_price-check {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 
-  .blocks_check {
-    background-color: green;
-    width: 60px;
-    height: 100%;
-    transform: scaleX(0);
-    transition: transform 300ms ease-in-out;
-  }
+    .blocks_price {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 0;
+      transition: transform 300ms ease-in-out;
+    }
 
-  .check-mark {
-    transition: transform 300ms ease-in-out;
-    transform: scaleX(0);
-    transform: rotate(0deg);
+    .blocks_check {
+      background-color: green;
+      width: 60px;
+      height: 100%;
+      transform: scaleX(0);
+      transition: transform 300ms ease-in-out;
+    }
+
+    .check-mark {
+      transition: transform 300ms ease-in-out;
+      transform: scaleX(0);
+      transform: rotate(0deg);
+    }
   }
 }
