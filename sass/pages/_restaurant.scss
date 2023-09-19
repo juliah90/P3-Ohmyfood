@@ -87,10 +87,22 @@ main {
     background-color: white;
     border-radius: 15px;
     display: flex;
-    padding: 0px 5px 0px 5px;
+    padding: 0px 5px 9px 5px;
     flex-direction: row;
     justify-content: space-between;
     box-shadow: 0px 4px 12px #dfdede;
+
+    &:hover {
+      .blocks_price {
+        transition: transform 2s ease-out;
+        transform: translate(-15px, 0px);
+      }
+
+      .check-mark {
+        transition: transform 3s;
+        transform: rotate(360deg);
+      }
+    }
   }
 
   .blocks_heading {
@@ -103,7 +115,23 @@ main {
     margin: 0px 0px 0px 6px;
     font-size: 15px;
     font-weight: 300;
-    transform: scale(.99,1);
+    transform: scale(.99, 1);
     transform-origin: left;
+  }
+}
+
+.menu_blocks_price-check {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  .blocks_price {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .check-mark {
+    transform: scale(.2, );
   }
 }
