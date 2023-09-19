@@ -308,7 +308,6 @@ template {
 }
 
 body {
-  max-width: 375px;
   padding: 0%;
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -442,7 +441,6 @@ body {
 }
 
 body {
-  max-width: 375px;
   padding: 0%;
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -517,7 +515,7 @@ body {
   background-color: #f6f6f6;
   flex-direction: column;
   align-items: center;
-  padding: 15px 15px 40px 15px;
+  padding: 15px 0px 40px 0px;
 }
 
 .sec2_heading {
@@ -555,8 +553,14 @@ body {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
+.sec2-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .sec3_info-blocks {
-  margin: 45px 0px;
+  margin: 45px 0px 0px 0px;
 }
 .sec3_info-blocks .sec3_heading {
   padding-left: 15px;
@@ -766,16 +770,18 @@ footer .foot-list .foot-image {
   padding-right: 10px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 635px) {
   body {
     max-width: inherit;
   }
   .sec2-3 {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
   }
   .section2 {
+    width: 400px;
     gap: 33px;
     margin-left: 25px;
     border-radius: 30px;
@@ -808,7 +814,7 @@ footer .foot-list .foot-image {
 }
 @media (min-width: 992px) {
   body {
-    max-width: inherit;
+    max-width: 100%;
   }
   .sec3_info-blocks {
     margin-right: 20px;
