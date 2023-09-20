@@ -48,6 +48,11 @@ body {
     .heart-outline {
       font-size: 25px;
       transform: scale(0.9, 1);
+      color: black;
+
+      &:hover {
+        opacity: 0;
+      }
     }
   }
 
@@ -87,9 +92,11 @@ body {
     flex-direction: row;
     justify-content: space-between;
     box-shadow: 0px 4px 12px #dfdede;
+    height: 54px;
 
     &:hover {
       .blocks_check {
+        width: 60px;
         transform: scaleX(1);
       }
 
@@ -98,11 +105,13 @@ body {
       }
 
       .check-mark {
-        // transform-origin: right;
-        transform: rotateZ(270deg) scaleX(1);
+        transform: rotateZ(360deg) scaleX(1);
       }
     }
   }
+}
+
+.menu_blocks_heading-info {
 
   .blocks_heading {
     font-weight: 700;
@@ -119,33 +128,40 @@ body {
   }
 }
 
-.menu_blocks_heading-info {
 
+.menu_blocks_price-check {
+  padding-top: 22px;
+  padding-bottom: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 
-  .menu_blocks_price-check {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+  .blocks_price {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+    transition: transform 300ms ease-in-out;
+  }
 
-    .blocks_price {
-      font-size: 15px;
-      font-weight: 700;
-      margin: 0;
-      transition: transform 300ms ease-in-out;
-    }
+  .blocks_check {
+    background-color: green;
+    height: 54px;
+    text-align: center;
+    margin: 15px 0px 0px 0px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+  }
 
-    .blocks_check {
-      background-color: green;
-      width: 60px;
-      height: 100%;
-      transform: scaleX(0);
-      transition: transform 300ms ease-in-out;
-    }
-
-    .check-mark {
-      transition: transform 300ms ease-in-out;
-      transform: scaleX(0);
-      transform: rotate(0deg);
-    }
+  .check-mark {
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    background-color: white;
+    padding: 2px 2px 2px 2px;
+    border-radius: 50px;
+    margin: 18px 0px 0px 0px;
+    transform: rotate(0deg);
   }
 }

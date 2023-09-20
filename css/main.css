@@ -355,6 +355,10 @@ body {
 .restaurant_menu-one .heading_heart .heart-outline {
   font-size: 25px;
   transform: scale(0.9, 1);
+  color: black;
+}
+.restaurant_menu-one .heading_heart .heart-outline:hover {
+  opacity: 0;
 }
 .restaurant_menu-one .heading_menu-one {
   font-family: "Shrikhand", sans-sarif;
@@ -389,22 +393,25 @@ body {
   flex-direction: row;
   justify-content: space-between;
   box-shadow: 0px 4px 12px #dfdede;
+  height: 54px;
 }
 .menu_blocks-all .menu_blocks:hover .blocks_check {
+  width: 60px;
   transform: scaleX(1);
 }
 .menu_blocks-all .menu_blocks:hover .blocks_price {
   transform: translate(-15px, 0px);
 }
 .menu_blocks-all .menu_blocks:hover .check-mark {
-  transform: rotateZ(270deg) scaleX(1);
+  transform: rotateZ(360deg) scaleX(1);
 }
-.menu_blocks-all .blocks_heading {
+
+.menu_blocks_heading-info .blocks_heading {
   font-weight: 700;
   margin: 12px 0px 7px 6px;
   font-size: 18px;
 }
-.menu_blocks-all .blocks_info {
+.menu_blocks_heading-info .blocks_info {
   margin: 0px 0px 0px 6px;
   font-size: 15px;
   font-weight: 300;
@@ -412,27 +419,37 @@ body {
   transform-origin: left;
 }
 
-.menu_blocks_heading-info .menu_blocks_price-check {
+.menu_blocks_price-check {
+  padding-top: 22px;
+  padding-bottom: 0;
+  margin: 0;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
 }
-.menu_blocks_heading-info .menu_blocks_price-check .blocks_price {
+.menu_blocks_price-check .blocks_price {
   font-size: 15px;
   font-weight: 700;
   margin: 0;
   transition: transform 300ms ease-in-out;
 }
-.menu_blocks_heading-info .menu_blocks_price-check .blocks_check {
+.menu_blocks_price-check .blocks_check {
   background-color: green;
-  width: 60px;
-  height: 100%;
+  height: 54px;
+  text-align: center;
+  margin: 15px 0px 0px 0px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
   transform: scaleX(0);
   transition: transform 300ms ease-in-out;
 }
-.menu_blocks_heading-info .menu_blocks_price-check .check-mark {
+.menu_blocks_price-check .check-mark {
   transition: transform 300ms ease-in-out;
   transform: scaleX(0);
+  background-color: white;
+  padding: 2px 2px 2px 2px;
+  border-radius: 50px;
+  margin: 18px 0px 0px 0px;
   transform: rotate(0deg);
 }
 
