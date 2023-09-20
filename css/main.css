@@ -389,11 +389,10 @@ body {
   background-color: white;
   border-radius: 15px;
   display: flex;
-  padding: 0px 5px 9px 5px;
   flex-direction: row;
   justify-content: space-between;
   box-shadow: 0px 4px 12px #dfdede;
-  height: 54px;
+  height: 67px;
 }
 .menu_blocks-all .menu_blocks:hover .blocks_check {
   width: 60px;
@@ -406,6 +405,9 @@ body {
   transform: rotateZ(360deg) scaleX(1);
 }
 
+.menu_blocks_heading-info {
+  padding: 0px 0px 9px 5px;
+}
 .menu_blocks_heading-info .blocks_heading {
   font-weight: 700;
   margin: 12px 0px 7px 6px;
@@ -417,6 +419,9 @@ body {
   font-weight: 300;
   transform: scale(0.99, 1);
   transform-origin: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .menu_blocks_price-check {
@@ -430,26 +435,28 @@ body {
 .menu_blocks_price-check .blocks_price {
   font-size: 15px;
   font-weight: 700;
-  margin: 0;
+  margin: 0px 0px 12px 0px;
   transition: transform 300ms ease-in-out;
 }
 .menu_blocks_price-check .blocks_check {
-  background-color: green;
-  height: 54px;
+  background-color: #99E2D0;
+  height: 67px;
   text-align: center;
   margin: 15px 0px 0px 0px;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
   transform: scaleX(0);
   transition: transform 300ms ease-in-out;
+  transform-origin: right;
 }
 .menu_blocks_price-check .check-mark {
   transition: transform 300ms ease-in-out;
   transform: scaleX(0);
   background-color: white;
-  padding: 2px 2px 2px 2px;
+  color: #99E2D0;
+  padding: 2px 3px 2px 3px;
   border-radius: 50px;
-  margin: 18px 0px 0px 0px;
+  margin: 23px 0px 0px 0px;
   transform: rotate(0deg);
 }
 
