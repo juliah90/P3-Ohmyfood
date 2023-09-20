@@ -21,11 +21,10 @@ body {
 
 .hero_image {
   position: absolute;
-  max-width: 375px;
 
   .hero_image-one {
     object-fit: cover;
-    width: 100%;
+    width: 100vw;
     height: 280px;
   }
 }
@@ -70,12 +69,14 @@ body {
   .main-heading {
     font-size: 17px;
     font-weight: 300;
+    margin-bottom: 5px;
   }
 
   .main-block {
-    color: $color-tertiary;
-    width: 10px;
-    height: 5px;
+    background-color: $color-tertiary;
+    width: 45px;
+    height: 3px;
+    margin-bottom: 15px;
   }
 }
 
@@ -83,6 +84,7 @@ body {
   display: flex;
   gap: 20px;
   flex-direction: column;
+  max-width: 400px;
 
   .menu_blocks {
     background-color: white;
@@ -112,6 +114,10 @@ body {
 
 .menu_blocks_heading-info {
   padding: 0px 0px 9px 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-right: 23px;
 
   .blocks_heading {
     font-weight: 700;
@@ -170,3 +176,25 @@ body {
     transform: rotate(0deg);
   }
 }
+
+
+@media (min-width:635px) {
+  .hero_image {
+    position: absolute;
+
+    .hero_image-one {
+      object-fit: cover;
+      object-position: 0px -349px;
+      width: 100vw;
+      height: 475px;
+    }
+  }
+
+  .restaurant_menu-one {
+    top: 358px;
+  }
+
+}
+
+
+@media (min-width: 992px) {}
