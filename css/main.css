@@ -372,6 +372,7 @@ body {
 .main_heading-block {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
 }
 .main_heading-block .main-heading {
   font-size: 17px;
