@@ -386,6 +386,10 @@ body {
   margin-bottom: 15px;
 }
 
+.whole_block-section {
+  max-width: 400px;
+}
+
 .menu_blocks-all {
   display: flex;
   gap: 20px;
@@ -485,7 +489,11 @@ body {
     top: 238px;
   }
   .heading_heart {
+    margin: auto;
     max-width: 600px;
+  }
+  .menu_blocks {
+    min-width: 392px;
   }
 }
 @media (min-width: 992px) {
@@ -500,6 +508,10 @@ body {
   }
   .restaurant_menu-one {
     top: 358px;
+  }
+  .menu_blocks-all {
+    display: flex;
+    flex-direction: row;
   }
 }
 body {

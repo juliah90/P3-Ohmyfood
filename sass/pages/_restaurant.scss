@@ -85,6 +85,10 @@ body {
   }
 }
 
+.whole_block-section {
+  max-width: 400px;
+}
+
 .menu_blocks-all {
   display: flex;
   gap: 20px;
@@ -182,6 +186,30 @@ body {
   }
 }
 
+// .btn-sec2 {
+//   &--grad {
+//     background-image: radial-gradient(closest-side at 17% 26%, #ef74da 82%, #9356dc 291%);
+//     margin: 10px;
+//     padding: 15px 0px;
+//     text-align: center;
+//     background-size: 200% auto;
+//     color: white;
+//     box-shadow: 3px 4px 4px #c7bcbc;
+//     border-radius: 50px;
+//     width: 215px;
+//     display: block;
+//     border: none;
+//   }
+
+//   &--grad:hover {
+//     cursor: pointer;
+//     background-image: radial-gradient(closest-side at 17% 26%, lighten(#ef74da, 3%) 82%, lighten(#9356dc, 3%) 291%);
+//     text-decoration: none;
+//     font-weight: 700;
+//     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
+//   }
+// }
+
 
 @media (min-width:635px) {
   .hero_image {
@@ -200,7 +228,14 @@ body {
   }
 
   .heading_heart {
+    margin: auto;
     max-width: 600px;
+  }
+
+
+
+  .menu_blocks {
+    min-width: 392px;
   }
 
 }
@@ -221,4 +256,10 @@ body {
   .restaurant_menu-one {
     top: 358px;
   }
+
+  .menu_blocks-all {
+    display: flex;
+    flex-direction: row;
+  }
+
 }
