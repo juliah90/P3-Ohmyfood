@@ -137,6 +137,8 @@ body {
     font-weight: 700;
     margin: 12px 0px 7px 6px;
     font-size: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   .blocks_info {
@@ -357,6 +359,10 @@ footer {
 
   .restaurant_menu-one {
     top: 358px;
+  }
+
+  .block-section-wide {
+    margin: 40px;
   }
 
   .whole_block-section {

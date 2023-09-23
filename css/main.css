@@ -432,6 +432,8 @@ body {
   font-weight: 700;
   margin: 12px 0px 7px 6px;
   font-size: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu_blocks_heading-info .blocks_info {
   margin: 0px 0px 0px 6px;
@@ -618,6 +620,9 @@ footer .foot-list-restaurant .foot-image-restaurant {
   }
   .restaurant_menu-one {
     top: 358px;
+  }
+  .block-section-wide {
+    margin: 40px;
   }
   .whole_block-section {
     max-width: 992px;
