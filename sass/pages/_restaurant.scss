@@ -6,7 +6,7 @@ body {
 }
 
 .container-all {
-  min-height: 1428px;
+  height: 1428px;
 }
 
 .nav_arrow {
@@ -195,7 +195,7 @@ body {
   padding-bottom: 60px;
 }
 
-.btn-sec2 {
+.btn-restaurant {
   padding-bottom: 35px;
 
   &--grad {
@@ -218,6 +218,46 @@ body {
     text-decoration: none;
     font-weight: 700;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
+footer {
+  background-color: #3b3b3b;
+  padding: 5px 10px 20px 10px;
+
+  .text-link-restaurant {
+    color: white;
+    text-decoration: none;
+  }
+
+  .foot-title-restaurant {
+    font-family: "Shrikhand", sans-serif;
+    padding-left: 0;
+    color: white;
+    font-size: 15px;
+  }
+
+  .foot-all-restaurant {
+    text-decoration: none;
+    color: white;
+    padding-left: 0;
+  }
+
+  .foot-list-restaurant {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    list-style-type: none;
+    color: white;
+    margin: 6px 0px 0px 0px;
+
+    .foot-image-restaurant {
+      text-decoration: none;
+      font-size: 10px;
+      width: 10px;
+      padding-right: 10px;
+    }
   }
 }
 
@@ -254,44 +294,48 @@ body {
     }
   }
 
-}
+  footer {
+    background-color: #3b3b3b;
+    padding: 5px 10px 20px 10px;
 
-footer {
-  background-color: #3b3b3b;
-  padding: 5px 10px 20px 10px;
-
-  .text-link {
-    color: white;
-    text-decoration: none;
-  }
-
-  .foot-title {
-    font-family: "Shrikhand", sans-serif;
-    padding-left: 0;
-    color: white;
-    font-size: 15px;
-  }
-
-  .foot-all {
-    text-decoration: none;
-    color: white;
-    padding-left: 0;
-  }
-
-  .foot-list {
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 14px;
-    list-style-type: none;
-    color: white;
-    margin: 6px 0px 0px 0px;
-
-    .foot-image {
+    .text-link-restaurant {
+      color: white;
       text-decoration: none;
-      font-size: 10px;
-      width: 10px;
-      padding-right: 10px;
+    }
+
+    .foot-title-restaurant {
+      font-family: "Shrikhand", sans-serif;
+      padding-left: 0;
+      color: white;
+      font-size: 15px;
+      padding-right: 60px;
+    }
+
+    .foot-all-restaurant {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 100px;
+      text-decoration: none;
+      color: white;
+      padding-left: 0;
+    }
+
+    .foot-list-restaurant {
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+      font-weight: 300;
+      font-size: 14px;
+      list-style-type: none;
+      color: white;
+      margin: 6px 0px 0px 0px;
+
+      .foot-image-restaurant {
+        text-decoration: none;
+        font-size: 10px;
+        width: 10px;
+        padding-right: 10px;
+      }
     }
   }
 }
@@ -299,7 +343,7 @@ footer {
 
 @media (min-width: 992px) {
   .container-all {
-    height: 900px;
+    height: 1042px;
   }
 
   .hero_image {
