@@ -11,18 +11,29 @@ body {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
-  animation: disappear 3s cubic-bezier(0.65, 0.1, 0, 1.2);
+  animation: disappear 5s cubic-bezier(0.65, 0.1, 0, 1.2);
   animation-fill-mode: forwards;
 }
 
 .spinner {
-  background-color: $color-tertiary;
-  width: 100px;
-  height: 100px;
-  animation: spinner-animate 2s linear;
-  position: sticky;
-  left: 50vw;
-  top: 50vh;
+  .loading-spin {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    color: $color-tertiary;
+    font-size: 90px;
+    animation: color-change 2s infinite, spinner-animate 2s infinite linear;
+  }
+}
+
+@keyframes color-change {
+  33% {
+    color: $color-primary;
+  }
+
+  60% {
+    color: $color-secondary;
+  }
 }
 
 @keyframes spinner-animate {
