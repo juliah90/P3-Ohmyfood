@@ -5,10 +5,6 @@ body {
   min-height: 100vh;
 }
 
-.container-all {
-  height: 1428px;
-}
-
 .nav_arrow {
   position: absolute;
   top: 20px;
@@ -28,7 +24,6 @@ body {
 }
 
 .hero_image {
-  position: absolute;
   width: 100%;
 
   .hero_image-one {
@@ -40,7 +35,7 @@ body {
 
 .restaurant_menu-one {
   position: relative;
-  top: 222px;
+  top: -50px;
   background-color: #f6f6f6;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -120,7 +115,7 @@ body {
       }
 
       .check-mark {
-        transform: rotateZ(360deg) scaleX(1);
+        transform: rotateZ(360deg);
       }
     }
   }
@@ -224,8 +219,10 @@ body {
 }
 
 footer {
+  position: relative;
   background-color: #3b3b3b;
   padding: 5px 10px 20px 10px;
+  margin-top: -50px;
 
   .text-link-restaurant {
     color: white;
@@ -265,9 +262,6 @@ footer {
 
 
 @media (min-width:635px) {
-  .container-all {
-    height: 1302px;
-  }
 
   .hero_image {
     .hero_image-one {
@@ -279,7 +273,7 @@ footer {
   }
 
   .restaurant_menu-one {
-    top: 238px;
+    // top: 238px;
   }
 
   .heading_heart {
@@ -344,25 +338,14 @@ footer {
 
 
 @media (min-width: 992px) {
-  .container-all {
-    height: 1042px;
-  }
 
   .hero_image {
     .hero_image-one {
       object-fit: cover;
-      object-position: 0px -258px;
+      object-position: 0px -89px;
       width: 100%;
       height: 475px;
     }
-  }
-
-  .restaurant_menu-one {
-    top: 358px;
-  }
-
-  .block-section-wide {
-    margin: 40px;
   }
 
   .whole_block-section {
@@ -372,11 +355,12 @@ footer {
     .menu_blocks-all {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       max-width: 992px;
 
       .menu_blocks {
-        min-width: 305px;
-        max-width: 335px;
+        width: 315px;
+        min-width: 300px;
       }
     }
   }
