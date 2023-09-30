@@ -118,16 +118,17 @@ body {
     height: 67px;
     min-width: 310px;
     animation: menu-load 1s ease;
+
     &:hover {
       .blocks_check {
         width: 60px;
         transform: scaleX(1);
       }
-  
+
       .blocks_price {
         transform: translate(-15px, 0px);
       }
-  
+
       .check-mark {
         transform: rotateZ(360deg);
       }
@@ -144,16 +145,17 @@ body {
     height: 67px;
     min-width: 310px;
     animation: menu-load 3s ease;
+
     &:hover {
       .blocks_check {
         width: 60px;
         transform: scaleX(1);
       }
-  
+
       .blocks_price {
         transform: translate(-15px, 0px);
       }
-  
+
       .check-mark {
         transform: rotateZ(360deg);
       }
@@ -170,16 +172,17 @@ body {
     height: 67px;
     min-width: 310px;
     animation: menu-load 5s ease;
+
     &:hover {
       .blocks_check {
         width: 60px;
         transform: scaleX(1);
       }
-  
+
       .blocks_price {
         transform: translate(-15px, 0px);
       }
-  
+
       .check-mark {
         transform: rotateZ(360deg);
       }
