@@ -406,7 +406,7 @@ body {
   flex-direction: column;
   max-width: 400px;
 }
-.menu_blocks-all .menu_blocks {
+.menu_blocks-all .menu_blocks-1 {
   background-color: white;
   border-radius: 15px;
   display: flex;
@@ -414,16 +414,59 @@ body {
   justify-content: space-between;
   box-shadow: 0px 4px 12px #dfdede;
   height: 67px;
-  animation: menu-load 3s ease;
+  min-width: 310px;
+  animation: menu-load 1s ease;
 }
-.menu_blocks-all .menu_blocks:hover .blocks_check {
+.menu_blocks-all .menu_blocks-1:hover .blocks_check {
   width: 60px;
   transform: scaleX(1);
 }
-.menu_blocks-all .menu_blocks:hover .blocks_price {
+.menu_blocks-all .menu_blocks-1:hover .blocks_price {
   transform: translate(-15px, 0px);
 }
-.menu_blocks-all .menu_blocks:hover .check-mark {
+.menu_blocks-all .menu_blocks-1:hover .check-mark {
+  transform: rotateZ(360deg);
+}
+.menu_blocks-all .menu_blocks-2 {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 4px 12px #dfdede;
+  height: 67px;
+  min-width: 310px;
+  animation: menu-load 3s ease;
+}
+.menu_blocks-all .menu_blocks-2:hover .blocks_check {
+  width: 60px;
+  transform: scaleX(1);
+}
+.menu_blocks-all .menu_blocks-2:hover .blocks_price {
+  transform: translate(-15px, 0px);
+}
+.menu_blocks-all .menu_blocks-2:hover .check-mark {
+  transform: rotateZ(360deg);
+}
+.menu_blocks-all .menu_blocks-3 {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 4px 12px #dfdede;
+  height: 67px;
+  min-width: 310px;
+  animation: menu-load 5s ease;
+}
+.menu_blocks-all .menu_blocks-3:hover .blocks_check {
+  width: 60px;
+  transform: scaleX(1);
+}
+.menu_blocks-all .menu_blocks-3:hover .blocks_price {
+  transform: translate(-15px, 0px);
+}
+.menu_blocks-all .menu_blocks-3:hover .check-mark {
   transform: rotateZ(360deg);
 }
 
