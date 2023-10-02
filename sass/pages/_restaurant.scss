@@ -315,7 +315,7 @@ footer {
 
   .foot-title-restaurant {
     font-family: "Shrikhand", sans-serif;
-    padding-left: 0;
+    // padding-left: 0;
     color: white;
     font-size: 15px;
   }
@@ -324,6 +324,7 @@ footer {
     text-decoration: none;
     color: white;
     padding-left: 0;
+    gap: 50px;
   }
 
   .foot-list-restaurant {
@@ -372,50 +373,14 @@ footer {
     }
   }
 
-  footer {
-    background-color: #3b3b3b;
-    padding: 5px 10px 20px 10px;
-
-    .text-link-restaurant {
-      color: white;
-      text-decoration: none;
-    }
-
-    .foot-title-restaurant {
-      font-family: "Shrikhand", sans-serif;
-      padding-left: 0;
-      color: white;
-      font-size: 15px;
-      padding-right: 60px;
-    }
-
-    .foot-all-restaurant {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 100px;
-      text-decoration: none;
-      color: white;
-      padding-left: 0;
-    }
-
-    .foot-list-restaurant {
-      font-family: 'Roboto', sans-serif;
-      text-decoration: none;
-      font-weight: 300;
-      font-size: 14px;
-      list-style-type: none;
-      color: white;
-      margin: 6px 0px 0px 0px;
-
-      .foot-image-restaurant {
-        text-decoration: none;
-        font-size: 10px;
-        width: 10px;
-        padding-right: 10px;
-      }
-    }
+  .foot-title-restaurant {
+    padding-right: 60px;
   }
+
+  .foot-all-restaurant {
+    display: flex;
+  }
+
 }
 
 
@@ -446,6 +411,10 @@ footer {
         min-width: none;
       }
     }
+  }
+
+  .foot-all-restaurant {
+    gap: 100px;
   }
 
 }
