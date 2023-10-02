@@ -108,6 +108,7 @@ body {
   max-width: 400px;
 
 
+
   .menu_blocks-1 {
     background-color: white;
     border-radius: 15px;
@@ -133,8 +134,10 @@ body {
       .check-mark {
         animation: rotating 900ms 1;
         animation-fill-mode: forwards;
+        transform:translate(-15px);
       }
     }
+
   }
 
   .menu_blocks-2 {
@@ -262,7 +265,7 @@ body {
 
   .check-mark {
     transition: transform 300ms ease-in-out;
-    transform: scaleX(0);
+    transform: scaleX(0) translateX(15px);
     background-color: white;
     color: $color-tertiary;
     padding: 2px 3px 2px 3px;

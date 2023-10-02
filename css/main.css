@@ -427,6 +427,7 @@ body {
 .menu_blocks-all .menu_blocks-1:hover .check-mark {
   animation: rotating 900ms 1;
   animation-fill-mode: forwards;
+  transform: translate(-15px);
 }
 .menu_blocks-all .menu_blocks-2 {
   background-color: white;
@@ -528,7 +529,7 @@ body {
 }
 .menu_blocks_price-check .check-mark {
   transition: transform 300ms ease-in-out;
-  transform: scaleX(0);
+  transform: scaleX(0) translateX(15px);
   background-color: white;
   color: #99E2D0;
   padding: 2px 3px 2px 3px;
