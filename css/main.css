@@ -414,7 +414,6 @@ body {
   justify-content: space-between;
   box-shadow: 0px 4px 12px #dfdede;
   height: 67px;
-  width: 330px;
   animation: menu-load 1s ease;
 }
 .menu_blocks-all .menu_blocks-1:hover .blocks_check {
@@ -437,7 +436,6 @@ body {
   justify-content: space-between;
   box-shadow: 0px 4px 12px #dfdede;
   height: 67px;
-  min-width: 310px;
   animation: menu-load 3s ease;
 }
 .menu_blocks-all .menu_blocks-2:hover .blocks_check {
@@ -459,7 +457,6 @@ body {
   justify-content: space-between;
   box-shadow: 0px 4px 12px #dfdede;
   height: 67px;
-  min-width: 310px;
   animation: menu-load 5s ease;
 }
 .menu_blocks-all .menu_blocks-3:hover .blocks_check {
@@ -587,7 +584,6 @@ footer .foot-all-restaurant {
   text-decoration: none;
   color: white;
   padding-left: 0;
-  gap: 50px;
 }
 footer .foot-list-restaurant {
   font-family: "Roboto", sans-serif;
@@ -629,6 +625,7 @@ footer .foot-list-restaurant .foot-image-restaurant {
   }
   .foot-all-restaurant {
     display: flex;
+    gap: 50px;
   }
 }
 @media (min-width: 992px) {
@@ -1065,6 +1062,9 @@ footer .foot-list .foot-image {
   .cards-all .new-tag {
     left: 250px;
     bottom: 185px;
+  }
+  .foot-all-restaurant {
+    gap: 100px;
   }
 }
 
