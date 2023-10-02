@@ -414,7 +414,7 @@ body {
   justify-content: space-between;
   box-shadow: 0px 4px 12px #dfdede;
   height: 67px;
-  min-width: 310px;
+  width: 330px;
   animation: menu-load 1s ease;
 }
 .menu_blocks-all .menu_blocks-1:hover .blocks_check {
@@ -422,10 +422,11 @@ body {
   transform: scaleX(1);
 }
 .menu_blocks-all .menu_blocks-1:hover .blocks_price {
-  transform: translate(-15px, 0px);
+  transform: translateX(-15px);
 }
 .menu_blocks-all .menu_blocks-1:hover .check-mark {
-  transform: rotateZ(360deg);
+  animation: rotating 900ms 1;
+  animation-fill-mode: forwards;
 }
 .menu_blocks-all .menu_blocks-2 {
   background-color: white;
@@ -446,7 +447,8 @@ body {
   transform: translate(-15px, 0px);
 }
 .menu_blocks-all .menu_blocks-2:hover .check-mark {
-  transform: rotateZ(360deg);
+  animation: rotating 900ms 1;
+  animation-fill-mode: forwards;
 }
 .menu_blocks-all .menu_blocks-3 {
   background-color: white;
@@ -467,9 +469,15 @@ body {
   transform: translate(-15px, 0px);
 }
 .menu_blocks-all .menu_blocks-3:hover .check-mark {
-  transform: rotateZ(360deg);
+  animation: rotating 900ms 1;
+  animation-fill-mode: forwards;
 }
 
+@keyframes rotating {
+  to {
+    transform: rotateZ(1turn);
+  }
+}
 .menu_blocks_heading-info {
   padding: 0px 0px 9px 5px;
   white-space: nowrap;
@@ -610,7 +618,9 @@ footer .foot-list-restaurant .foot-image-restaurant {
   .whole_block-section {
     margin: auto;
   }
-  .whole_block-section .menu_blocks {
+  .whole_block-section .menu_blocks-1,
+  .whole_block-section .menu_blocks-2,
+  .whole_block-section .menu_blocks-3 {
     min-width: 315px;
   }
   footer {
@@ -661,17 +671,19 @@ footer .foot-list-restaurant .foot-image-restaurant {
     height: 475px;
   }
   .whole_block-section {
-    max-width: 992px;
+    max-width: 1052px;
   }
   .whole_block-section .menu_blocks-all {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 992px;
+    max-width: 1160px;
   }
-  .whole_block-section .menu_blocks-all .menu_blocks {
-    width: 315px;
-    min-width: 300px;
+  .whole_block-section .menu_blocks-all .menu_blocks-1,
+  .whole_block-section .menu_blocks-all .menu_blocks-2,
+  .whole_block-section .menu_blocks-all .menu_blocks-3 {
+    width: 330px;
+    min-width: none;
   }
 }
 body {
