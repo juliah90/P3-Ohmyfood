@@ -420,6 +420,7 @@ body {
 .menu_blocks-all .menu_blocks-1:hover .blocks_check {
   width: 60px;
   transform: scaleX(1);
+  overflow: hidden;
 }
 .menu_blocks-all .menu_blocks-1:hover .blocks_price {
   transform: translateX(-15px);

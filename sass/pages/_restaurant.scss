@@ -123,6 +123,7 @@ body {
       .blocks_check {
         width: 60px;
         transform: scaleX(1);
+        overflow: hidden;
       }
 
       .blocks_price {
