@@ -101,108 +101,61 @@ body {
   }
 }
 
+@mixin block-stuff {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 4px 12px #dfdede;
+  height: 67px;
+  &:hover {
+    .blocks_check {
+      width: 60px;
+      transform: scaleX(1);
+    }
+
+    .blocks_price {
+      transform: translateX(-15px);
+    }
+
+    .check-mark {
+      animation: rotating 600ms;
+    }
+  }
+}
+
 .menu_blocks-all {
   display: flex;
   gap: 20px;
   flex-direction: column;
   max-width: 400px;
 
-
-
   .menu_blocks-1 {
-    background-color: white;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-shadow: 0px 4px 12px #dfdede;
-    height: 67px;
-    // width: 330px;
+    @include block-stuff;
     animation: menu-load 1s ease;
-
-    &:hover {
-      .blocks_check {
-        width: 60px;
-        transform: scaleX(1);
-        overflow: hidden;
-      }
-
-      .blocks_price {
-        transform: translateX(-15px);
-      }
-
-      .check-mark {
-        animation: rotating 900ms 1;
-        animation-fill-mode: forwards;
-        transform:translate(-15px);
-      }
-    }
 
   }
 
   .menu_blocks-2 {
-    background-color: white;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-shadow: 0px 4px 12px #dfdede;
-    height: 67px;
-    // min-width: 310px;
+    @include block-stuff;
     animation: menu-load 3s ease;
-
-    &:hover {
-      .blocks_check {
-        width: 60px;
-        transform: scaleX(1);
-      }
-
-      .blocks_price {
-        transform: translate(-15px, 0px);
-      }
-
-      .check-mark {
-        animation: rotating 900ms 1;
-        animation-fill-mode: forwards;
-      }
-    }
   }
 
   .menu_blocks-3 {
-    background-color: white;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-shadow: 0px 4px 12px #dfdede;
-    height: 67px;
-    // min-width: 310px;
+    @include block-stuff;
     animation: menu-load 5s ease;
-
-    &:hover {
-      .blocks_check {
-        width: 60px;
-        transform: scaleX(1);
-      }
-
-      .blocks_price {
-        transform: translate(-15px, 0px);
-      }
-
-      .check-mark {
-        animation: rotating 900ms 1;
-        animation-fill-mode: forwards;
-      }
-    }
   }
 
 }
 
 @keyframes rotating {
-  from {}
+  5% {
+    transform: translate(15px);
+  }
 
-  to {
-    transform: rotateZ(1turn);
+  10% {
+    transform: rotate(360deg);
   }
 
 }
@@ -326,7 +279,6 @@ footer {
     text-decoration: none;
     color: white;
     padding-left: 0;
-    // gap: 50px;
   }
 
   .foot-list-restaurant {

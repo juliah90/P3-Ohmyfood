@@ -419,15 +419,12 @@ body {
 .menu_blocks-all .menu_blocks-1:hover .blocks_check {
   width: 60px;
   transform: scaleX(1);
-  overflow: hidden;
 }
 .menu_blocks-all .menu_blocks-1:hover .blocks_price {
   transform: translateX(-15px);
 }
 .menu_blocks-all .menu_blocks-1:hover .check-mark {
-  animation: rotating 900ms 1;
-  animation-fill-mode: forwards;
-  transform: translate(-15px);
+  animation: rotating 600ms;
 }
 .menu_blocks-all .menu_blocks-2 {
   background-color: white;
@@ -444,11 +441,10 @@ body {
   transform: scaleX(1);
 }
 .menu_blocks-all .menu_blocks-2:hover .blocks_price {
-  transform: translate(-15px, 0px);
+  transform: translateX(-15px);
 }
 .menu_blocks-all .menu_blocks-2:hover .check-mark {
-  animation: rotating 900ms 1;
-  animation-fill-mode: forwards;
+  animation: rotating 600ms;
 }
 .menu_blocks-all .menu_blocks-3 {
   background-color: white;
@@ -465,16 +461,18 @@ body {
   transform: scaleX(1);
 }
 .menu_blocks-all .menu_blocks-3:hover .blocks_price {
-  transform: translate(-15px, 0px);
+  transform: translateX(-15px);
 }
 .menu_blocks-all .menu_blocks-3:hover .check-mark {
-  animation: rotating 900ms 1;
-  animation-fill-mode: forwards;
+  animation: rotating 600ms;
 }
 
 @keyframes rotating {
-  to {
-    transform: rotateZ(1turn);
+  5% {
+    transform: translate(15px);
+  }
+  10% {
+    transform: rotate(360deg);
   }
 }
 .menu_blocks_heading-info {
