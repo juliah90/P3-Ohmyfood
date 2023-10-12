@@ -642,6 +642,7 @@ footer .foot-list-restaurant .foot-image-restaurant {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 1160px;
+    justify-content: center;
   }
   .whole_block-section .menu_blocks-all .menu_blocks-1,
   .whole_block-section .menu_blocks-all .menu_blocks-2,
