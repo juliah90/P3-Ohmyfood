@@ -1,5 +1,4 @@
 body {
-  // max-width: 375px;
   padding: 0%;
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -7,11 +6,10 @@ body {
 
 .spinner-cover {
   position: fixed;
-  // scale: 0;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
-  animation: disappear 5s cubic-bezier(0.65, 0.1, 0, 1.2);
+  animation: disappear 0s 2s cubic-bezier(0.65, 0.1, 0, 1.2);
   animation-fill-mode: forwards;
 }
 
@@ -23,6 +21,7 @@ body {
     color: $color-tertiary;
     font-size: 90px;
     animation: color-change 2s infinite, spinner-animate 2s infinite linear;
+    animation-fill-mode: forwards;
   }
 }
 
@@ -38,7 +37,8 @@ body {
 
 @keyframes spinner-animate {
   from {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
+    
   }
 
   to {
@@ -47,14 +47,17 @@ body {
 }
 
 @keyframes disappear {
-  from {
+  5% {
     opacity: 1;
     z-index: 1000;
   }
 
-  to {
+  50%{background: rgba(0, 0, 0, 0)}
+
+  100% {
     opacity: 0;
-    display: none;
+    z-index: 0;
+    transform: scale(0);
   }
 }
 
@@ -469,6 +472,7 @@ footer {
       bottom: 185px;
     }
   }
+
   .foot-all-restaurant {
     gap: 100px;
   }
