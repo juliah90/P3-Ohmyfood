@@ -87,6 +87,7 @@ body {
 
 .whole_block-section {
   max-width: 400px;
+  margin: auto;
 }
 
 @keyframes menu-load {
@@ -306,7 +307,7 @@ footer {
   .hero_image {
     .hero_image-one {
       object-fit: cover;
-      object-position: 0px -146px;
+      object-position: 0px -8px;
       width: 100%;
       height: 475px;
     }

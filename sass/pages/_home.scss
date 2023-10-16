@@ -222,7 +222,7 @@ body {
 .cards-all {
   display: flex;
   flex-direction: column;
-  padding: 0px 5px 0px 5px;
+  padding: 0px 5px 10px 5px;
   align-items: center;
   gap: 20px;
 
@@ -243,6 +243,7 @@ body {
     &--inactive {
       background-color: transparent;
       color: transparent;
+      box-shadow: none;
     }
   }
 

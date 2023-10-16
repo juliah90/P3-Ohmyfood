@@ -388,6 +388,7 @@ body {
 
 .whole_block-section {
   max-width: 400px;
+  margin: auto;
 }
 
 @keyframes menu-load {
@@ -603,7 +604,7 @@ footer .foot-list-restaurant .foot-image-restaurant {
 @media (min-width: 635px) {
   .hero_image .hero_image-one {
     object-fit: cover;
-    object-position: 0px -146px;
+    object-position: 0px -8px;
     width: 100%;
     height: 475px;
   }
@@ -857,7 +858,7 @@ body {
 .cards-all {
   display: flex;
   flex-direction: column;
-  padding: 0px 5px 0px 5px;
+  padding: 0px 5px 10px 5px;
   align-items: center;
   gap: 20px;
 }
@@ -878,6 +879,7 @@ body {
 .cards-all .new-tag--inactive {
   background-color: transparent;
   color: transparent;
+  box-shadow: none;
 }
 .cards-all .text-link {
   text-decoration: none;
